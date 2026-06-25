@@ -77,6 +77,14 @@ def to_iso(d: str):
     return None
 
 
+def _shift(iso: str, days: int):
+    """Return an ISO date shifted by N days (for sanity-checking parsed dates)."""
+    try:
+        return (datetime.fromisoformat(iso).date() + timedelta(days=days)).isoformat()
+    except Exception:
+        return iso
+
+
 # ---------------------------------------------------------------------------
 # HOUSE
 # ---------------------------------------------------------------------------
@@ -154,6 +162,10 @@ def _extract_house_rows(text: str, p: dict):
         # a date on the line (transaction date is the first one)
         dmatch = re.search(r"\d{1,2}/\d{1,2}/\d{4}", line)
         tx_date = to_iso(dmatch.group(0)) if dmatch else p["filed"]
+        # Guard against misparsed dates: a transaction can't sensibly be >120 days
+        # before its filing. If it is, the line's date was likely the wrong column.
+        if tx_date and tx_date < _shift(p["filed"], -120):
+            tx_date = p["filed"]
         asset = line[:m.start()].strip(" .-")[:60] or ticker
         rows.append({
             "member": p["name"],
@@ -164,6 +176,7 @@ def _extract_house_rows(text: str, p: dict):
             "amount_str": amount_str,
             "amount_mid": parse_amount_mid(amount_str),
             "tx_date": tx_date,
+            "filed_date": p["filed"],
             "committee": tag_committee(p["name"]),
         })
     return rows
@@ -216,11 +229,12 @@ def parse_senate(year: int):
         try:
             first, last = row[0].strip(), row[1].strip()
             link_html = row[3]
+            filed = to_iso(row[4].split()[0]) if len(row) > 4 and row[4] else None
             href = BeautifulSoup(link_html, "html.parser").a["href"]
             if "/ptr/" not in href:   # paper filing -> PDF, skip (not machine-readable)
                 continue
             url = "https://efdsearch.senate.gov" + href
-            out.extend(_parse_senate_ptr(s, url, f"{first} {last}".strip()))
+            out.extend(_parse_senate_ptr(s, url, f"{first} {last}".strip(), filed))
         except Exception as e:
             log(f"[senate] row error: {e}")
             continue
@@ -229,7 +243,7 @@ def parse_senate(year: int):
     return out
 
 
-def _parse_senate_ptr(session, url, member):
+def _parse_senate_ptr(session, url, member, filed_date):
     rows = []
     try:
         pg = session.get(url, timeout=60)
@@ -255,8 +269,8 @@ def _parse_senate_ptr(session, url, member):
                 ttype = "SELL"
             else:
                 continue
-            if not tx_date or datetime.fromisoformat(tx_date).date() < CUTOFF:
-                continue
+            # Window is driven by FILING date (handled upstream by the report query),
+            # so we keep late-disclosed older trades. tx_date is just detail here.
             rows.append({
                 "member": member,
                 "chamber": "Senate",
@@ -265,7 +279,8 @@ def _parse_senate_ptr(session, url, member):
                 "type": ttype,
                 "amount_str": amount_str or "undisclosed",
                 "amount_mid": parse_amount_mid(amount_str),
-                "tx_date": tx_date,
+                "tx_date": tx_date or filed_date,
+                "filed_date": filed_date,
                 "committee": tag_committee(member),
             })
     except Exception as e:
@@ -289,9 +304,9 @@ def main():
         seen.add(k)
         deduped.append(t)
 
-    # committee members first, then most recent date, then biggest amount
+    # committee members first, then most recently DISCLOSED, then biggest amount
     deduped.sort(key=lambda t: (0 if t["committee"] else 1,
-                                _neg_date(t["tx_date"]),
+                                _neg_date(t.get("filed_date") or t["tx_date"]),
                                 -t["amount_mid"]))
 
     out = {
