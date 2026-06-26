@@ -53,6 +53,10 @@ CUTOFF = (datetime.now(timezone.utc) - timedelta(days=WINDOW_DAYS)).date()
 
 AMOUNT_RE = re.compile(r"\$[\d,]+(?:\s*-\s*\$[\d,]+)?")
 TICKER_RE = re.compile(r"\(([A-Z]{1,5}(?:\.[A-Z])?)\)")
+# Anchor of a House PTR transaction line: type letter + transaction date + notification date
+ANCHOR_RE = re.compile(r"\b([PSE])\s+(\d{1,2}/\d{1,2}/\d{4})\s+(\d{1,2}/\d{1,2}/\d{4})")
+RANGE_RE  = re.compile(r"\$([\d,]+)\s*-\s*\$([\d,]+)")
+OWNER_CODES = {"SP", "JT", "DC"}  # spouse / joint / dependent child
 
 
 def log(*a):
@@ -145,34 +149,77 @@ def parse_house(year: int):
 
 
 def _extract_house_rows(text: str, p: dict):
-    """Pull (ticker, type, amount, date) rows from an electronic House PTR PDF."""
+    """Pull (ticker, type, amount, date) rows from an electronic House PTR PDF.
+
+    Records span multiple lines: the asset name wraps, so the (TICKER) and the
+    second half of the amount land on the line(s) AFTER the type/date anchor.
+    We anchor on 'P|S <date> <date>', then join the following continuation
+    line(s) until we have both a ticker and a full amount range.
+    """
     rows = []
-    for line in text.splitlines():
-        m = TICKER_RE.search(line)
+    lines = text.splitlines()
+    n = len(lines)
+    for i, line in enumerate(lines):
+        m = ANCHOR_RE.search(line)
         if not m:
             continue
-        ticker = m.group(1)
-        # transaction type: a standalone P / S / S (partial) token
-        tmatch = re.search(r"\b(P|S)\b(?:\s*\(partial\))?", line)
-        if not tmatch:
+        letter = m.group(1)
+        if letter not in ("P", "S"):   # E = exchange, skip
             continue
-        ttype = "BUY" if tmatch.group(1) == "P" else "SELL"
-        amount = AMOUNT_RE.search(line)
-        amount_str = amount.group(0) if amount else "undisclosed"
-        # a date on the line (transaction date is the first one)
-        dmatch = re.search(r"\d{1,2}/\d{1,2}/\d{4}", line)
-        tx_date = to_iso(dmatch.group(0)) if dmatch else p["filed"]
-        # Guard against misparsed dates: a transaction can't sensibly be >120 days
-        # before its filing. If it is, the line's date was likely the wrong column.
-        if tx_date and tx_date < _shift(p["filed"], -120):
+
+        # Stitch continuation lines (asset wrap) until we have a ticker and the
+        # full amount range (House amounts are always two-dollar ranges, but the
+        # upper bound often lands after the ticker, so RANGE_RE alone misses it).
+        def _ready(s):
+            return TICKER_RE.search(s) and len(re.findall(r"\$[\d,]+", s)) >= 2
+        combined = line
+        j = i + 1
+        while not _ready(combined) and j < n and j <= i + 3:
+            nxt = lines[j]
+            if ANCHOR_RE.search(nxt):
+                break
+            if re.match(r"^[A-Z]\s{3,}", nxt.strip()):  # 'F      Status' / 'D      Description' marker
+                break
+            combined += " " + nxt.strip()
+            j += 1
+
+        tm = TICKER_RE.search(combined)
+        if not tm:
+            continue
+        ticker = tm.group(1)
+
+        dollars = re.findall(r"\$([\d,]+)", combined)
+        if len(dollars) >= 2:
+            amount_str = "$" + dollars[0] + " - $" + dollars[1]
+        elif dollars:
+            amount_str = "$" + dollars[0]
+        else:
+            amount_str = "undisclosed"
+
+        tx_date = to_iso(m.group(2)) or p["filed"]
+        if tx_date < _shift(p["filed"], -120):   # guard misparsed dates
             tx_date = p["filed"]
-        asset = line[:m.start()].strip(" .-")[:60] or ticker
+
+        # Asset = text before the type/date anchor, minus the owner code
+        pre = line[:m.start()].strip()
+        toks = pre.split()
+        if toks and toks[0] in OWNER_CODES:
+            toks = toks[1:]
+        asset = " ".join(toks)
+        asset = re.sub(r"\([A-Z.]{1,6}\)", "", asset)   # drop (TICKER) if it was inline
+        asset = re.sub(r"\[[A-Z]{2}\]", "", asset)       # drop [ST]/[OP]/... codes
+        asset = " ".join(asset.split())
+        is_option = "[OP]" in combined or "[OF]" in combined or "[OL]" in combined
+        if is_option:
+            asset = (asset + " (options)").strip()
+        asset = asset[:60] or ticker
+
         rows.append({
             "member": p["name"],
             "chamber": "House",
             "ticker": ticker,
             "asset": asset,
-            "type": ttype,
+            "type": "BUY" if letter == "P" else "SELL",
             "amount_str": amount_str,
             "amount_mid": parse_amount_mid(amount_str),
             "tx_date": tx_date,
