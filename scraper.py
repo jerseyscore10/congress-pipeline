@@ -237,18 +237,23 @@ def _extract_house_rows(text: str, p: dict):
 
 
 def _extract_option_detail(lines, start, end):
-    """Parse '...200 call options ... strike price of $50 ... expiration date of 3/19/27'
-    from the description line(s) after an options record. Returns a short label."""
-    blob = " ".join(l.strip() for l in lines[start:end])
-    blob = re.sub(r"\s+", " ", blob)
+    """Parse option detail from the description line(s) after a House record."""
+    return option_detail_from_text(" ".join(l.strip() for l in lines[start:end]))
+
+
+def option_detail_from_text(blob):
+    """Pull '200 calls · $50 strike · exp 2027-03-19' from any free text containing
+    '...call/put options ... strike price of $X ... expiration date of M/D/YY'.
+    Works for both House description lines and Senate comment fields."""
+    blob = re.sub(r"\s+", " ", blob or "")
     cnt = re.search(r"(\d[\d,]*)\s+(call|put)", blob, re.I)
-    strike = re.search(r"strike price of \$?([\d.,]+)", blob, re.I)
-    exp = re.search(r"expiration date of (\d{1,2}/\d{1,2}/\d{2,4})", blob, re.I)
+    strike = re.search(r"strike(?:\s+price)?(?:\s+of)?\s*\$?([\d.,]+)", blob, re.I)
+    exp = re.search(r"(?:expiration|expir\w*|exp\.?)\s*(?:date)?\s*(?:of)?\s*(\d{1,2}/\d{1,2}/\d{2,4})", blob, re.I)
     parts = []
     if cnt:
         parts.append(cnt.group(1) + " " + cnt.group(2).lower() + "s")
     if strike:
-        parts.append("$" + strike.group(1).rstrip(".") + " strike")
+        parts.append("$" + strike.group(1).rstrip(".,") + " strike")
     if exp:
         parts.append("exp " + (to_iso(exp.group(1)) or exp.group(1)))
     return " · ".join(parts)
@@ -327,12 +332,14 @@ def _parse_senate_ptr(session, url, member, filed_date):
             tds = [td.get_text(strip=True) for td in tr.find_all("td")]
             if len(tds) < 8:
                 continue
-            # columns: #, Tx Date, Owner, Ticker, Asset Name, Asset Type, Type, Amount, ...
+            # columns: #, Tx Date, Owner, Ticker, Asset Name, Asset Type, Type, Amount, Comment
             tx_date = to_iso(tds[1])
             ticker = tds[3].upper()
             asset = tds[4]
+            asset_type = tds[5] if len(tds) > 5 else ""
             ttype_raw = tds[6].lower()
             amount_str = tds[7]
+            comment = tds[8] if len(tds) > 8 else ""
             if ticker in ("", "--"):
                 continue
             if "purchase" in ttype_raw:
@@ -341,18 +348,30 @@ def _parse_senate_ptr(session, url, member, filed_date):
                 ttype = "SELL"
             else:
                 continue
+
+            # Options: flagged in the asset-type/name; details (if any) live in the comment
+            blob = " ".join([asset, asset_type, comment])
+            is_option = bool(re.search(r"option|\bcall\b|\bput\b", blob, re.I))
+            asset_label = asset[:60]
+            option_detail = ""
+            if is_option:
+                if "option" not in asset_label.lower():
+                    asset_label = (asset_label + " (options)")[:70]
+                option_detail = option_detail_from_text(blob)
+
             # Window is driven by FILING date (handled upstream by the report query),
             # so we keep late-disclosed older trades. tx_date is just detail here.
             rows.append({
                 "member": member,
                 "chamber": "Senate",
                 "ticker": ticker,
-                "asset": asset[:60],
+                "asset": asset_label,
                 "type": ttype,
                 "amount_str": amount_str or "undisclosed",
                 "amount_mid": parse_amount_mid(amount_str),
                 "tx_date": tx_date or filed_date,
                 "filed_date": filed_date,
+                "option_detail": option_detail,
                 "committee": tag_committee(member),
             })
     except Exception as e:
