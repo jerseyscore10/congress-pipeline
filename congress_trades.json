@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-26T11:17:14Z",
+  "generated_utc": "2026-06-26T11:31:31Z",
   "source": "house+senate official",
   "window_days": 40,
   "count": 278,
@@ -79,7 +79,7 @@
       "amount_mid": 750000.5,
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-03",
-      "option_detail": "",
+      "option_detail": "$330 strike \u00b7 exp 2026-10-16",
       "committee": "House Financial Services"
     },
     {
@@ -92,7 +92,7 @@
       "amount_mid": 375000.5,
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-03",
-      "option_detail": "",
+      "option_detail": "$340 strike \u00b7 exp 2026-10-16",
       "committee": "House Financial Services"
     },
     {
@@ -534,6 +534,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-25",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -546,6 +547,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-25",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -805,6 +807,7 @@
       "amount_mid": 75000.5,
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -817,6 +820,7 @@
       "amount_mid": 75000.5,
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -868,6 +872,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -880,6 +885,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -892,6 +898,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -904,6 +911,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -916,6 +924,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -928,6 +937,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -940,6 +950,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -952,6 +963,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -964,6 +976,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -976,6 +989,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -988,6 +1002,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1000,6 +1015,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1012,6 +1028,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1024,6 +1041,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1036,6 +1054,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1048,6 +1067,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1060,6 +1080,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1072,6 +1093,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1084,6 +1106,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1096,6 +1119,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1108,6 +1132,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1120,6 +1145,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1132,6 +1158,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1144,6 +1171,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1156,6 +1184,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1168,6 +1197,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1180,6 +1210,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1192,6 +1223,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1204,6 +1236,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1216,6 +1249,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1228,6 +1262,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-16",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -1357,6 +1392,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-11",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -2448,6 +2484,7 @@
       "amount_mid": 8000.5,
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-07",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -3097,6 +3134,7 @@
       "amount_mid": 175000.5,
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-02",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -3109,6 +3147,7 @@
       "amount_mid": 32500.5,
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-02",
+      "option_detail": "",
       "committee": null
     },
     {
@@ -3394,6 +3433,7 @@
       "amount_mid": 175000.5,
       "tx_date": "2026-05-06",
       "filed_date": "2026-05-22",
+      "option_detail": "",
       "committee": null
     },
     {
