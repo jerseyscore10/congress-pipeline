@@ -214,6 +214,12 @@ def _extract_house_rows(text: str, p: dict):
             asset = (asset + " (options)").strip()
         asset = asset[:60] or ticker
 
+        # For options, pull strike/expiration from the "Description:" line that
+        # follows the record (the only price-ish info disclosures contain).
+        option_detail = ""
+        if is_option:
+            option_detail = _extract_option_detail(lines, i, min(i + 7, n))
+
         rows.append({
             "member": p["name"],
             "chamber": "House",
@@ -224,9 +230,28 @@ def _extract_house_rows(text: str, p: dict):
             "amount_mid": parse_amount_mid(amount_str),
             "tx_date": tx_date,
             "filed_date": p["filed"],
+            "option_detail": option_detail,
             "committee": tag_committee(p["name"]),
         })
     return rows
+
+
+def _extract_option_detail(lines, start, end):
+    """Parse '...200 call options ... strike price of $50 ... expiration date of 3/19/27'
+    from the description line(s) after an options record. Returns a short label."""
+    blob = " ".join(l.strip() for l in lines[start:end])
+    blob = re.sub(r"\s+", " ", blob)
+    cnt = re.search(r"(\d[\d,]*)\s+(call|put)", blob, re.I)
+    strike = re.search(r"strike price of \$?([\d.,]+)", blob, re.I)
+    exp = re.search(r"expiration date of (\d{1,2}/\d{1,2}/\d{2,4})", blob, re.I)
+    parts = []
+    if cnt:
+        parts.append(cnt.group(1) + " " + cnt.group(2).lower() + "s")
+    if strike:
+        parts.append("$" + strike.group(1).rstrip(".") + " strike")
+    if exp:
+        parts.append("exp " + (to_iso(exp.group(1)) or exp.group(1)))
+    return " · ".join(parts)
 
 
 # ---------------------------------------------------------------------------
