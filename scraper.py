@@ -41,7 +41,7 @@ try:
 except Exception:  # pragma: no cover
     pdfplumber = None
 
-from committees import tag_committee
+from committees import tag_committee, is_top_trader
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
@@ -232,6 +232,7 @@ def _extract_house_rows(text: str, p: dict):
             "filed_date": p["filed"],
             "option_detail": option_detail,
             "committee": tag_committee(p["name"]),
+            "top_trader": is_top_trader(p["name"]),
         })
     return rows
 
@@ -373,6 +374,7 @@ def _parse_senate_ptr(session, url, member, filed_date):
                 "filed_date": filed_date,
                 "option_detail": option_detail,
                 "committee": tag_committee(member),
+                "top_trader": is_top_trader(member),
             })
     except Exception as e:
         log(f"[senate] ptr parse error {url}: {e}")

@@ -34,6 +34,18 @@ WATCHLIST = {
     "ro khanna": "House (notable trader)",
 }
 
+# "Top traders" — curated from backtesting vs Quiver / Unusual Whales (consistently
+# high-value over recent years). These just get a ⭐ flag in the email (no reordering).
+TOP_TRADERS = [
+    "Debbie Wasserman Schultz",
+    "Michael Guest",
+    "Mark Green",
+    "David Rouzer",
+    "Ron Wyden",
+    "Nancy Pelosi",
+    "Dan Crenshaw",
+]
+
 
 def normalize(name: str) -> str:
     """'Hon. Rudy C. Yakym III' -> 'rudy c yakym' (lowercased, no honorifics/suffixes)."""
@@ -162,6 +174,14 @@ def tag_committee(name: str):
     # 2) notable-trader watchlist (applies in both cases)
     wl = [({k.split()[0]}, k.split()[-1], v) for k, v in WATCHLIST.items()]
     return _match(name, wl)
+
+
+# Top-trader candidates: (first token, rest-as-last, original name)
+_TOP_CANDS = [({normalize(n).split()[0]}, " ".join(normalize(n).split()[1:]), n) for n in TOP_TRADERS]
+
+
+def is_top_trader(name: str) -> bool:
+    return _match(name, _TOP_CANDS) is not None
 
 
 # ---------------------------------------------------------------------------
