@@ -48,10 +48,11 @@ COMMITTEES = {
     "vern buchanan": "House Ways & Means",
     "mike kelly": "House Ways & Means",
     # ---- House Intelligence ----
-    "mike turner": "House Intelligence (Chair)",
+    "rick crawford": "House Intelligence (Chair)",
     "jim himes": "House Intelligence (RM)",
     "dan crenshaw": "House Intelligence",
     # ---- House Energy & Commerce ----
+    "brett guthrie": "House Energy & Commerce (Chair)",
     "bob latta": "House Energy & Commerce",
     "frank pallone": "House Energy & Commerce (RM)",
     # ---- Notable / frequently watched ----
