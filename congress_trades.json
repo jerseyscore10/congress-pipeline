@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-06-27T14:58:07Z",
+  "generated_utc": "2026-06-28T15:00:38Z",
   "source": "house+senate official",
   "window_days": 40,
-  "count": 278,
+  "count": 270,
   "trades": [
     {
       "member": "Jerry Moran,",
@@ -15,7 +15,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-25",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "Jerry Moran,",
@@ -28,7 +29,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-25",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "Dwight Evans",
@@ -41,7 +43,8 @@
       "tx_date": "2026-06-10",
       "filed_date": "2026-06-24",
       "option_detail": "",
-      "committee": "House Ways & Means"
+      "committee": "House Ways & Means",
+      "top_trader": false
     },
     {
       "member": "Nancy Pelosi",
@@ -54,7 +57,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-23",
       "option_detail": "200 calls \u00b7 $50 strike \u00b7 exp 2027-03-19",
-      "committee": "House (notable trader)"
+      "committee": "House (notable trader)",
+      "top_trader": true
     },
     {
       "member": "Nancy Pelosi",
@@ -67,7 +71,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-23",
       "option_detail": "200 calls \u00b7 $50 strike \u00b7 exp 2027-03-19",
-      "committee": "House (notable trader)"
+      "committee": "House (notable trader)",
+      "top_trader": true
     },
     {
       "member": "Thomas H. Kean",
@@ -80,7 +85,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-18",
       "option_detail": "",
-      "committee": "House Energy & Commerce"
+      "committee": "House Energy & Commerce",
+      "top_trader": false
     },
     {
       "member": "Thomas H. Kean",
@@ -93,7 +99,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-18",
       "option_detail": "",
-      "committee": "House Energy & Commerce"
+      "committee": "House Energy & Commerce",
+      "top_trader": false
     },
     {
       "member": "Thomas H. Kean",
@@ -106,7 +113,8 @@
       "tx_date": "2026-06-01",
       "filed_date": "2026-06-18",
       "option_detail": "",
-      "committee": "House Energy & Commerce"
+      "committee": "House Energy & Commerce",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -119,7 +127,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -132,7 +141,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -145,7 +155,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -158,7 +169,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -171,7 +183,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -184,7 +197,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -197,7 +211,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -210,7 +225,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -223,7 +239,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -236,7 +253,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -249,7 +267,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -262,7 +281,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -275,7 +295,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -288,7 +309,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -301,7 +323,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -314,7 +337,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -327,7 +351,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -340,7 +365,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -353,7 +379,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -366,7 +393,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -379,7 +407,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -392,7 +421,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -405,7 +435,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -418,7 +449,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -431,7 +463,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -444,7 +477,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -457,7 +491,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -470,7 +505,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -483,7 +519,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -496,7 +533,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -509,7 +547,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -522,7 +561,8 @@
       "tx_date": "2026-05-27",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John Boozman",
@@ -535,7 +575,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "Mike Kelly",
@@ -548,7 +589,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-11",
       "option_detail": "",
-      "committee": "House Ways & Means"
+      "committee": "House Ways & Means",
+      "top_trader": false
     },
     {
       "member": "Mike Kelly",
@@ -561,7 +603,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-11",
       "option_detail": "",
-      "committee": "House Ways & Means"
+      "committee": "House Ways & Means",
+      "top_trader": false
     },
     {
       "member": "Gary C Peters",
@@ -574,7 +617,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-11",
       "option_detail": "",
-      "committee": "Senate Appropriations"
+      "committee": "Senate Appropriations",
+      "top_trader": false
     },
     {
       "member": "John McGuire",
@@ -587,7 +631,8 @@
       "tx_date": "2026-06-04",
       "filed_date": "2026-06-10",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -600,7 +645,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -613,7 +659,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -626,7 +673,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -639,7 +687,8 @@
       "tx_date": "2026-05-04",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -652,7 +701,8 @@
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -665,7 +715,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -678,7 +729,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -691,7 +743,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -704,7 +757,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -717,7 +771,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -730,7 +785,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -743,7 +799,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -756,7 +813,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -769,7 +827,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -782,7 +841,8 @@
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -795,7 +855,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -808,7 +869,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -821,7 +883,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -834,7 +897,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -847,7 +911,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -860,7 +925,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -873,7 +939,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -886,7 +953,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -899,7 +967,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -912,7 +981,8 @@
       "tx_date": "2026-05-18",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -925,7 +995,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -938,7 +1009,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -951,7 +1023,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -964,7 +1037,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -977,7 +1051,8 @@
       "tx_date": "2026-05-18",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -990,7 +1065,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1003,7 +1079,8 @@
       "tx_date": "2026-05-04",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1016,7 +1093,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1029,7 +1107,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1042,7 +1121,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1055,7 +1135,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1068,7 +1149,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1081,7 +1163,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1094,7 +1177,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1107,7 +1191,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1120,7 +1205,8 @@
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1133,7 +1219,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1146,7 +1233,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1159,7 +1247,8 @@
       "tx_date": "2026-05-12",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1172,7 +1261,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1185,7 +1275,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1198,7 +1289,8 @@
       "tx_date": "2026-05-18",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1211,7 +1303,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1224,7 +1317,8 @@
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1237,7 +1331,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1250,7 +1345,8 @@
       "tx_date": "2026-05-18",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1263,7 +1359,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1276,7 +1373,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1289,7 +1387,8 @@
       "tx_date": "2026-05-12",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1302,7 +1401,8 @@
       "tx_date": "2026-06-02",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1315,7 +1415,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1328,7 +1429,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1341,7 +1443,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1354,7 +1457,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1367,7 +1471,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1380,7 +1485,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1393,7 +1499,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1406,7 +1513,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1419,7 +1527,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1432,7 +1541,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1445,7 +1555,8 @@
       "tx_date": "2026-05-18",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1458,7 +1569,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1471,7 +1583,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1484,7 +1597,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1497,7 +1611,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1510,7 +1625,8 @@
       "tx_date": "2026-05-12",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1523,7 +1639,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1536,7 +1653,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1549,7 +1667,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Gilbert Cisneros",
@@ -1562,7 +1681,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Armed Services"
+      "committee": "House Armed Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -1575,7 +1695,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -1588,7 +1709,8 @@
       "tx_date": "2026-05-12",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -1601,7 +1723,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -1614,7 +1737,8 @@
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -1627,7 +1751,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -1640,7 +1765,8 @@
       "tx_date": "2026-05-12",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Maria Elvira Salazar",
@@ -1653,7 +1779,8 @@
       "tx_date": "2026-05-11",
       "filed_date": "2026-06-08",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Tim Moore",
@@ -1666,7 +1793,8 @@
       "tx_date": "2026-06-04",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Robert E. Latta",
@@ -1679,7 +1807,8 @@
       "tx_date": "2026-06-04",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": "House Energy & Commerce"
+      "committee": "House Energy & Commerce",
+      "top_trader": false
     },
     {
       "member": "Tim Moore",
@@ -1692,7 +1821,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Lloyd Doggett",
@@ -1705,7 +1835,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-04",
       "option_detail": "",
-      "committee": "House Ways & Means"
+      "committee": "House Ways & Means",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1718,7 +1849,8 @@
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-03",
       "option_detail": "$330 strike \u00b7 exp 2026-10-16",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1731,7 +1863,8 @@
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-03",
       "option_detail": "$340 strike \u00b7 exp 2026-10-16",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Cleo Fields",
@@ -1744,7 +1877,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1757,7 +1891,8 @@
       "tx_date": "2026-05-05",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1770,7 +1905,8 @@
       "tx_date": "2026-05-05",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1783,7 +1919,8 @@
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1796,7 +1933,8 @@
       "tx_date": "2026-05-01",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1809,7 +1947,8 @@
       "tx_date": "2026-05-22",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1822,7 +1961,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1835,7 +1975,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1848,7 +1989,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1861,7 +2003,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1874,7 +2017,8 @@
       "tx_date": "2026-05-04",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Sheldon Whitehouse",
@@ -1887,7 +2031,8 @@
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-02",
       "option_detail": "",
-      "committee": "Senate Finance"
+      "committee": "Senate Finance",
+      "top_trader": false
     },
     {
       "member": "Sheldon Whitehouse",
@@ -1900,7 +2045,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-02",
       "option_detail": "",
-      "committee": "Senate Finance"
+      "committee": "Senate Finance",
+      "top_trader": false
     },
     {
       "member": "Ed Case",
@@ -1913,7 +2059,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-05-31",
       "option_detail": "",
-      "committee": "House Appropriations"
+      "committee": "House Appropriations",
+      "top_trader": false
     },
     {
       "member": "Bernie Moreno",
@@ -1926,7 +2073,8 @@
       "tx_date": "2026-05-06",
       "filed_date": "2026-05-22",
       "option_detail": "",
-      "committee": "Senate Banking"
+      "committee": "Senate Banking",
+      "top_trader": false
     },
     {
       "member": "Thomas H. Kean",
@@ -1939,7 +2087,8 @@
       "tx_date": "2026-04-14",
       "filed_date": "2026-05-22",
       "option_detail": "",
-      "committee": "House Energy & Commerce"
+      "committee": "House Energy & Commerce",
+      "top_trader": false
     },
     {
       "member": "Thomas H. Kean",
@@ -1952,7 +2101,8 @@
       "tx_date": "2026-04-21",
       "filed_date": "2026-05-22",
       "option_detail": "",
-      "committee": "House Energy & Commerce"
+      "committee": "House Energy & Commerce",
+      "top_trader": false
     },
     {
       "member": "Thomas H. Kean",
@@ -1965,7 +2115,8 @@
       "tx_date": "2026-04-14",
       "filed_date": "2026-05-22",
       "option_detail": "",
-      "committee": "House Energy & Commerce"
+      "committee": "House Energy & Commerce",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1978,7 +2129,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -1991,7 +2143,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2004,7 +2157,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2017,7 +2171,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2030,7 +2185,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2043,7 +2199,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2056,7 +2213,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2069,7 +2227,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Tim Moore",
@@ -2082,7 +2241,8 @@
       "tx_date": "2026-05-18",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2095,7 +2255,8 @@
       "tx_date": "2026-04-27",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2108,7 +2269,8 @@
       "tx_date": "2026-04-23",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2121,7 +2283,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2134,7 +2297,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2147,7 +2311,8 @@
       "tx_date": "2026-04-06",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2160,7 +2325,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2173,7 +2339,8 @@
       "tx_date": "2026-04-06",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2186,7 +2353,8 @@
       "tx_date": "2026-04-15",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2199,7 +2367,8 @@
       "tx_date": "2026-04-16",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2212,7 +2381,8 @@
       "tx_date": "2026-04-13",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2225,7 +2395,8 @@
       "tx_date": "2026-04-13",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2238,7 +2409,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2251,7 +2423,8 @@
       "tx_date": "2026-04-06",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2264,7 +2437,8 @@
       "tx_date": "2026-04-24",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Josh Gottheimer",
@@ -2277,7 +2451,8 @@
       "tx_date": "2026-04-09",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Intelligence"
+      "committee": "House Intelligence",
+      "top_trader": false
     },
     {
       "member": "Tim Moore",
@@ -2290,7 +2465,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Tim Moore",
@@ -2303,7 +2479,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-05-19",
       "option_detail": "",
-      "committee": "House Financial Services"
+      "committee": "House Financial Services",
+      "top_trader": false
     },
     {
       "member": "Jared Moskowitz",
@@ -2316,7 +2493,8 @@
       "tx_date": "2026-05-06",
       "filed_date": "2026-06-19",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Jared Moskowitz",
@@ -2329,7 +2507,8 @@
       "tx_date": "2026-05-06",
       "filed_date": "2026-06-19",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2342,7 +2521,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2355,7 +2535,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2368,7 +2549,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2381,7 +2563,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2394,7 +2577,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2407,7 +2591,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2420,7 +2605,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2433,7 +2619,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2446,7 +2633,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2459,7 +2647,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2472,7 +2661,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2485,7 +2675,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Matthew Robert Van Epps",
@@ -2498,7 +2689,8 @@
       "tx_date": "2026-06-16",
       "filed_date": "2026-06-17",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Richard W. Allen",
@@ -2511,7 +2703,8 @@
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Richard W. Allen",
@@ -2524,7 +2717,8 @@
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Richard W. Allen",
@@ -2537,7 +2731,8 @@
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-16",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Julie Johnson",
@@ -2550,7 +2745,8 @@
       "tx_date": "2026-05-12",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Julie Johnson",
@@ -2563,7 +2759,8 @@
       "tx_date": "2026-05-12",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -2576,7 +2773,8 @@
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -2589,7 +2787,8 @@
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -2602,7 +2801,8 @@
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -2615,7 +2815,8 @@
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -2628,7 +2829,8 @@
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -2641,7 +2843,8 @@
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -2654,7 +2857,8 @@
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-12",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "James Banks",
@@ -2667,7 +2871,8 @@
       "tx_date": "2026-06-05",
       "filed_date": "2026-06-07",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Richard W. Allen",
@@ -2680,7 +2885,8 @@
       "tx_date": "2026-04-15",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Richard W. Allen",
@@ -2693,7 +2899,8 @@
       "tx_date": "2026-04-16",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Richard W. Allen",
@@ -2706,7 +2913,8 @@
       "tx_date": "2026-04-16",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Richard W. Allen",
@@ -2719,7 +2927,8 @@
       "tx_date": "2026-04-16",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Richard W. Allen",
@@ -2732,7 +2941,8 @@
       "tx_date": "2026-04-16",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2745,7 +2955,8 @@
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2758,7 +2969,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2771,7 +2983,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2784,7 +2997,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2797,7 +3011,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2810,7 +3025,8 @@
       "tx_date": "2026-05-14",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2823,7 +3039,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2836,7 +3053,8 @@
       "tx_date": "2026-05-28",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2849,7 +3067,8 @@
       "tx_date": "2026-05-19",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2862,7 +3081,8 @@
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2875,7 +3095,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2888,7 +3109,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2901,7 +3123,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2914,7 +3137,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2927,7 +3151,8 @@
       "tx_date": "2026-05-28",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2940,7 +3165,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2953,7 +3179,8 @@
       "tx_date": "2026-05-29",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2966,7 +3193,8 @@
       "tx_date": "2026-05-01",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2979,7 +3207,8 @@
       "tx_date": "2026-05-28",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -2992,7 +3221,8 @@
       "tx_date": "2026-05-06",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -3005,7 +3235,8 @@
       "tx_date": "2026-05-21",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -3018,7 +3249,8 @@
       "tx_date": "2026-05-22",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -3031,7 +3263,8 @@
       "tx_date": "2026-05-13",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -3044,7 +3277,8 @@
       "tx_date": "2026-05-07",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "April McClain Delaney",
@@ -3057,7 +3291,8 @@
       "tx_date": "2026-05-08",
       "filed_date": "2026-06-05",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3070,7 +3305,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3083,7 +3319,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3096,7 +3333,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3109,7 +3347,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3122,7 +3361,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3135,7 +3375,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3148,7 +3389,8 @@
       "tx_date": "2026-06-01",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3161,7 +3403,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3174,7 +3417,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3187,7 +3431,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3200,7 +3445,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3213,7 +3459,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3226,7 +3473,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3239,7 +3487,8 @@
       "tx_date": "2026-06-03",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Tim Walberg",
@@ -3252,7 +3501,8 @@
       "tx_date": "2026-02-10",
       "filed_date": "2026-06-03",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Virginia Foxx",
@@ -3265,7 +3515,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-06-02",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Christian D. Menefee",
@@ -3278,7 +3529,8 @@
       "tx_date": "2026-02-10",
       "filed_date": "2026-06-01",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Christian D. Menefee",
@@ -3291,7 +3543,8 @@
       "tx_date": "2026-05-28",
       "filed_date": "2026-06-01",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Christian D. Menefee",
@@ -3304,7 +3557,8 @@
       "tx_date": "2026-06-11",
       "filed_date": "2026-06-01",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Christian D. Menefee",
@@ -3317,7 +3571,8 @@
       "tx_date": "2026-02-23",
       "filed_date": "2026-06-01",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Daniel Webster",
@@ -3330,7 +3585,8 @@
       "tx_date": "2026-06-01",
       "filed_date": "2026-06-01",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Christian D. Menefee",
@@ -3343,7 +3599,8 @@
       "tx_date": "2026-02-10",
       "filed_date": "2026-06-01",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Christian D. Menefee",
@@ -3356,7 +3613,8 @@
       "tx_date": "2026-02-17",
       "filed_date": "2026-06-01",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -3369,7 +3627,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-05-28",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -3382,7 +3641,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-05-28",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -3395,7 +3655,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-05-28",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -3408,7 +3669,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-05-28",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -3421,7 +3683,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-05-28",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -3434,7 +3697,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-05-28",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "David J. Taylor",
@@ -3447,7 +3711,8 @@
       "tx_date": "2026-05-15",
       "filed_date": "2026-05-28",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Jonathan Jackson",
@@ -3460,7 +3725,8 @@
       "tx_date": "2026-04-24",
       "filed_date": "2026-05-27",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Jonathan Jackson",
@@ -3473,7 +3739,8 @@
       "tx_date": "2026-04-20",
       "filed_date": "2026-05-27",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Jonathan Jackson",
@@ -3486,7 +3753,8 @@
       "tx_date": "2026-04-20",
       "filed_date": "2026-05-27",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Jonathan Jackson",
@@ -3499,7 +3767,8 @@
       "tx_date": "2026-04-24",
       "filed_date": "2026-05-27",
       "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     },
     {
       "member": "Jonathan Jackson",
@@ -3512,111 +3781,8 @@
       "tx_date": "2026-04-15",
       "filed_date": "2026-05-27",
       "option_detail": "",
-      "committee": null
-    },
-    {
-      "member": "Brian Babin",
-      "chamber": "House",
-      "ticker": "CODI",
-      "asset": "D/B/A Compass Diversified Holdings",
-      "type": "SELL",
-      "amount_str": "$1,001 - $15,000",
-      "amount_mid": 8000.5,
-      "tx_date": "2026-05-05",
-      "filed_date": "2026-05-18",
-      "option_detail": "",
-      "committee": null
-    },
-    {
-      "member": "Brian Babin",
-      "chamber": "House",
-      "ticker": "ENB",
-      "asset": "Enbridge Inc Common Stock",
-      "type": "SELL",
-      "amount_str": "$1,001 - $15,000",
-      "amount_mid": 8000.5,
-      "tx_date": "2026-05-05",
-      "filed_date": "2026-05-18",
-      "option_detail": "",
-      "committee": null
-    },
-    {
-      "member": "Brian Babin",
-      "chamber": "House",
-      "ticker": "FIP",
-      "asset": "FTAI Infrastructure Inc. - Common",
-      "type": "SELL",
-      "amount_str": "$1,001 - $15,000",
-      "amount_mid": 8000.5,
-      "tx_date": "2026-05-05",
-      "filed_date": "2026-05-18",
-      "option_detail": "",
-      "committee": null
-    },
-    {
-      "member": "Brian Babin",
-      "chamber": "House",
-      "ticker": "IAG",
-      "asset": "Iamgold Corporation Ordinary Shares",
-      "type": "SELL",
-      "amount_str": "$1,001 - $15,000",
-      "amount_mid": 8000.5,
-      "tx_date": "2026-05-05",
-      "filed_date": "2026-05-18",
-      "option_detail": "",
-      "committee": null
-    },
-    {
-      "member": "Brian Babin",
-      "chamber": "House",
-      "ticker": "RRC",
-      "asset": "Range Resources Corporation",
-      "type": "SELL",
-      "amount_str": "$1,001 - $15,000",
-      "amount_mid": 8000.5,
-      "tx_date": "2026-05-05",
-      "filed_date": "2026-05-18",
-      "option_detail": "",
-      "committee": null
-    },
-    {
-      "member": "Brian Babin",
-      "chamber": "House",
-      "ticker": "SOUHY",
-      "asset": "SOUTH32 LTD SPNS/ADR",
-      "type": "SELL",
-      "amount_str": "$1,001 - $15,000",
-      "amount_mid": 8000.5,
-      "tx_date": "2026-05-05",
-      "filed_date": "2026-05-18",
-      "option_detail": "",
-      "committee": null
-    },
-    {
-      "member": "Brian Babin",
-      "chamber": "House",
-      "ticker": "WTSHF",
-      "asset": "WESTSHORE TERM INVST CP",
-      "type": "SELL",
-      "amount_str": "$1,001 - $15,000",
-      "amount_mid": 8000.5,
-      "tx_date": "2026-05-05",
-      "filed_date": "2026-05-18",
-      "option_detail": "",
-      "committee": null
-    },
-    {
-      "member": "Brian Babin",
-      "chamber": "House",
-      "ticker": "WDS",
-      "asset": "Woodside Energy Group Limited",
-      "type": "SELL",
-      "amount_str": "$1,001 - $15,000",
-      "amount_mid": 8000.5,
-      "tx_date": "2026-05-05",
-      "filed_date": "2026-05-18",
-      "option_detail": "",
-      "committee": null
+      "committee": null,
+      "top_trader": false
     }
   ]
 }
