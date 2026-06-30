@@ -32,7 +32,7 @@ from datetime import datetime, timezone, timedelta
 import requests
 from pdf2image import convert_from_bytes
 from rapidfuzz import process, fuzz
-import anthropic
+import google.generativeai as genai
 
 OGE_API = "https://extapps2.oge.gov/201/Presiden.nsf/API.xsp/v2/rest"
 SEC_TICKERS = "https://www.sec.gov/files/company_tickers.json"
@@ -46,7 +46,7 @@ WINDOW_DAYS = 120          # how far back to keep trades in the output
 MAX_PAGES = 25             # cap pages sent to the vision model (bounds cost)
 DPI = 175
 FUZZ_THRESHOLD = 88        # min fuzzy score to accept a ticker mapping
-MODEL = os.environ.get("EXEC_VISION_MODEL", "claude-sonnet-4-6")
+MODEL = os.environ.get("EXEC_VISION_MODEL", "gemini-2.0-flash")
 
 SEEN_FILE = "seen_filings.json"
 OUT_FILE = "exec_trades.json"
@@ -115,30 +115,6 @@ def new_278t_filings(seen):
 # ---------------------------------------------------------------------------
 # 2 + 3. Render to images, extract equities with a vision LLM
 # ---------------------------------------------------------------------------
-EXTRACT_TOOL = {
-    "name": "record_trades",
-    "description": "Record the common-stock equity transactions found in the filing.",
-    "input_schema": {
-        "type": "object",
-        "properties": {
-            "trades": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "asset_name": {"type": "string", "description": "Company/security name as printed"},
-                        "action": {"type": "string", "enum": ["BUY", "SELL"]},
-                        "date": {"type": "string", "description": "Transaction date MM/DD/YYYY if visible, else ''"},
-                        "amount": {"type": "string", "description": "Amount range as printed, e.g. '$1,001 - $15,000'"},
-                    },
-                    "required": ["asset_name", "action", "amount"],
-                },
-            }
-        },
-        "required": ["trades"],
-    },
-}
-
 PROMPT = (
     "This is a U.S. OGE Form 278-T periodic transaction report (a scanned PDF). "
     "Read the transactions table across all pages. Extract ONLY common-stock equity "
@@ -146,37 +122,32 @@ PROMPT = (
     "IGNORE all fixed income and non-equity holdings: anything with NOTE, BOND, BILL, "
     "TREASURY/TREAS, MUNI, municipal, a coupon like '6.875%', a maturity date like "
     "'12/31/49', preferred shares (PFD/PERP/'-XXXpl' suffixes), CDs, money-market or "
-    "deposit accounts. For each equity transaction return the company name as printed, "
-    "the action (BUY for purchase, SELL for sale), the transaction date, and the amount "
-    "range. If there are no equity transactions, return an empty list. Be precise; do "
-    "not invent rows."
+    "deposit accounts. Be precise; do not invent rows.\n\n"
+    "Return JSON only, in exactly this shape:\n"
+    '{"trades": [{"asset_name": "<company as printed>", "action": "BUY"|"SELL", '
+    '"date": "MM/DD/YYYY or empty", "amount": "<amount range as printed>"}]}\n'
+    'If there are no equity transactions, return {"trades": []}. '
+    "(BUY = purchase, SELL = sale.)"
 )
 
 
-def extract_equities(pdf_bytes, client):
+def extract_equities(pdf_bytes, model):
     images = convert_from_bytes(pdf_bytes, dpi=DPI)
     total_pages = len(images)
     images = images[:MAX_PAGES]
-    content = []
-    for img in images:
-        buf = io.BytesIO()
-        img.save(buf, format="PNG")
-        content.append({"type": "image", "source": {
-            "type": "base64", "media_type": "image/png",
-            "data": base64.b64encode(buf.getvalue()).decode()}})
-    content.append({"type": "text", "text": PROMPT})
-
-    resp = client.messages.create(
-        model=MODEL, max_tokens=4096,
-        tools=[EXTRACT_TOOL], tool_choice={"type": "tool", "name": "record_trades"},
-        messages=[{"role": "user", "content": content}],
+    parts = list(images) + [PROMPT]   # Gemini accepts PIL images directly
+    resp = model.generate_content(
+        parts,
+        generation_config={"response_mime_type": "application/json", "temperature": 0},
     )
-    for block in resp.content:
-        if getattr(block, "type", "") == "tool_use":
-            log(f"[vision] {total_pages} pages ({min(total_pages, MAX_PAGES)} sent), "
-                f"{len(block.input.get('trades', []))} equity rows returned")
-            return block.input.get("trades", [])
-    return []
+    try:
+        data = json.loads(resp.text)
+    except Exception as e:
+        log(f"[vision] JSON parse error: {e}")
+        return []
+    trades = data.get("trades", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
+    log(f"[vision] {total_pages} pages ({min(total_pages, MAX_PAGES)} sent), {len(trades)} equity rows returned")
+    return trades
 
 
 # ---------------------------------------------------------------------------
@@ -238,10 +209,12 @@ def to_iso(d):
 
 
 def main():
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        log("[fatal] ANTHROPIC_API_KEY not set")
+    key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    if not key:
+        log("[fatal] GEMINI_API_KEY not set")
         sys.exit(1)
-    client = anthropic.Anthropic()
+    genai.configure(api_key=key)
+    model = genai.GenerativeModel(MODEL)
 
     seen = set(load_json(SEEN_FILE, []))
     prior = load_json(OUT_FILE, {}).get("trades", [])
@@ -254,7 +227,7 @@ def main():
         log(f"[proc] {f['filer']} filed {f['filed']}  {f['url']}")
         try:
             pdf = requests.get(f["url"], headers=UA, timeout=120).content
-            rows = extract_equities(pdf, client)
+            rows = extract_equities(pdf, model)
         except Exception as e:
             log(f"[proc] error: {e}")
             continue

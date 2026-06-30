@@ -4,4 +4,4 @@ pdfplumber>=0.11
 pyyaml>=6.0
 pdf2image>=1.17
 rapidfuzz>=3.9
-anthropic>=0.40
+google-generativeai>=0.8

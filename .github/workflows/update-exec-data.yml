@@ -26,8 +26,8 @@ jobs:
 
       - name: Scrape executive-branch 278-T filings
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          EXEC_VISION_MODEL: claude-sonnet-4-6
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EXEC_VISION_MODEL: gemini-2.0-flash
         run: python exec_scraper.py
 
       - name: Commit updated data
