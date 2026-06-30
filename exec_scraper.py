@@ -48,7 +48,7 @@ MAX_PAGES = 25             # cap pages sent to the vision model (bounds cost)
 DPI = 150                  # lower res -> fewer image tokens (still legible)
 REQUEST_DELAY = 4          # seconds between filings (smooths burst rate)
 FUZZ_THRESHOLD = 88        # min fuzzy score to accept a ticker mapping
-MODEL = os.environ.get("EXEC_VISION_MODEL", "gemini-2.0-flash")
+MODEL = os.environ.get("EXEC_VISION_MODEL", "gemini-2.5-flash")
 
 SEEN_FILE = "seen_filings.json"
 OUT_FILE = "exec_trades.json"

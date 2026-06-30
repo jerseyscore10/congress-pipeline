@@ -27,7 +27,7 @@ jobs:
       - name: Scrape executive-branch 278-T filings
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          EXEC_VISION_MODEL: gemini-2.0-flash
+          EXEC_VISION_MODEL: gemini-2.5-flash
         run: python exec_scraper.py
 
       - name: Commit updated data
