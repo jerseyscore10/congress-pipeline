@@ -1,9 +1,51 @@
 {
-  "generated_utc": "2026-06-29T18:00:14Z",
+  "generated_utc": "2026-06-30T17:04:05Z",
   "source": "house+senate official",
   "window_days": 40,
-  "count": 244,
+  "count": 248,
   "trades": [
+    {
+      "member": "Cleo Fields",
+      "chamber": "House",
+      "ticker": "GOOG",
+      "asset": "Alphabet Inc. - Class C Capital Stock",
+      "type": "BUY",
+      "amount_str": "$1,001 - $15,000",
+      "amount_mid": 8000.5,
+      "tx_date": "2026-06-15",
+      "filed_date": "2026-06-26",
+      "option_detail": "",
+      "committee": "House Financial Services",
+      "top_trader": false
+    },
+    {
+      "member": "Cleo Fields",
+      "chamber": "House",
+      "ticker": "MSFT",
+      "asset": "Microsoft Corporation - Common",
+      "type": "BUY",
+      "amount_str": "$1,001 - $15,000",
+      "amount_mid": 8000.5,
+      "tx_date": "2026-06-11",
+      "filed_date": "2026-06-26",
+      "option_detail": "",
+      "committee": "House Financial Services",
+      "top_trader": false
+    },
+    {
+      "member": "Cleo Fields",
+      "chamber": "House",
+      "ticker": "QNT",
+      "asset": "Quantinuum Inc. - Class A Common",
+      "type": "BUY",
+      "amount_str": "$1,001 - $15,000",
+      "amount_mid": 8000.5,
+      "tx_date": "2026-06-04",
+      "filed_date": "2026-06-26",
+      "option_detail": "",
+      "committee": "House Financial Services",
+      "top_trader": false
+    },
     {
       "member": "Jerry Moran,",
       "chamber": "Senate",
@@ -2116,6 +2158,20 @@
       "filed_date": "2026-05-22",
       "option_detail": "",
       "committee": "House Energy & Commerce",
+      "top_trader": false
+    },
+    {
+      "member": "A. Mitchell McConnell, Jr.",
+      "chamber": "Senate",
+      "ticker": "WFC",
+      "asset": "Wells Fargo & Company Common Stock",
+      "type": "BUY",
+      "amount_str": "$1,001 - $15,000",
+      "amount_mid": 8000.5,
+      "tx_date": "2026-06-01",
+      "filed_date": "2026-06-30",
+      "option_detail": "",
+      "committee": null,
       "top_trader": false
     },
     {
