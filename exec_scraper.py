@@ -27,6 +27,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone, timedelta
 
 import requests
@@ -44,7 +45,8 @@ SEC_UA = {"User-Agent": "market-sentinel research prince.thissa@gmail.com"}
 WATCH = ["Trump, Donald J"]
 WINDOW_DAYS = 120          # how far back to keep trades in the output
 MAX_PAGES = 25             # cap pages sent to the vision model (bounds cost)
-DPI = 175
+DPI = 150                  # lower res -> fewer image tokens (still legible)
+REQUEST_DELAY = 4          # seconds between filings (smooths burst rate)
 FUZZ_THRESHOLD = 88        # min fuzzy score to accept a ticker mapping
 MODEL = os.environ.get("EXEC_VISION_MODEL", "gemini-2.0-flash")
 
@@ -140,10 +142,28 @@ def extract_equities(pdf_bytes, model):
     total_pages = len(images)
     images = images[:MAX_PAGES]
     parts = list(images) + [PROMPT]   # Gemini accepts PIL images directly
-    resp = model.generate_content(
-        parts,
-        generation_config={"response_mime_type": "application/json", "temperature": 0},
-    )
+
+    resp = None
+    for attempt in range(4):
+        try:
+            resp = model.generate_content(
+                parts,
+                generation_config={"response_mime_type": "application/json", "temperature": 0},
+            )
+            break
+        except Exception as e:
+            msg = str(e)
+            if "429" in msg and attempt < 3:
+                m = re.search(r"retry[_ ]delay.*?(\d+)", msg, re.S) or re.search(r"in (\d+(?:\.\d+)?)s", msg)
+                wait = min(int(float(m.group(1))) + 2, 65) if m else 20 * (attempt + 1)
+                log(f"[vision] 429 rate limit; waiting {wait}s (attempt {attempt + 1})")
+                time.sleep(wait)
+                continue
+            log(f"[vision] error: {msg[:200]}")
+            return []
+    if resp is None:
+        return []
+
     try:
         data = json.loads(resp.text)
     except Exception as e:
@@ -252,6 +272,7 @@ def main():
                 "match_score": score,
             })
         seen.add(f["doc_id"])
+        time.sleep(REQUEST_DELAY)   # smooth the request rate
 
     # merge with prior, de-dupe, prune to window
     cutoff = (datetime.now(timezone.utc) - timedelta(days=WINDOW_DAYS)).date().isoformat()
