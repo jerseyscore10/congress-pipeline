@@ -72,17 +72,21 @@ def load_json(path, default):
 # 1. OGE polling
 # ---------------------------------------------------------------------------
 def list_oge_filings():
-    out, start, length = [], 0, 2000
-    while True:
-        r = requests.get(OGE_API, params={"start": start, "length": length},
-                         headers={**UA, "Accept": "application/json",
-                                  "X-Requested-With": "XMLHttpRequest"}, timeout=120)
-        data = r.json()
+    headers = {**UA, "Accept": "application/json", "X-Requested-With": "XMLHttpRequest",
+               "Referer": "https://extapps2.oge.gov/web/OGE.nsf/"
+                          "Officials%20Individual%20Disclosures%20Search%20Collection"}
+    out, start = [], 0
+    for _ in range(40):  # safety cap (16.7k rows / 5k per page -> ~4 pages)
+        data = requests.get(OGE_API, params={"start": start, "length": 5000},
+                            headers=headers, timeout=120).json()
         rows = data.get("data", [])
+        if not rows:
+            break
         out.extend(rows)
-        total = data.get("recordsTotal", len(out))
-        start += length
-        if start >= total or not rows:
+        total = data.get("recordsTotal", 0)
+        # advance by rows actually returned (robust to server page caps)
+        start += len(rows)
+        if len(out) >= total or len(rows) < 5000:
             break
     return out
 
