@@ -1,0 +1,43 @@
+name: Update executive-branch trades
+
+on:
+  schedule:
+    - cron: "30 9 * * *"      # daily 09:30 UTC (~5:30am ET), before the 7am email
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install poppler (for pdf2image)
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Scrape executive-branch 278-T filings
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EXEC_VISION_MODEL: claude-sonnet-4-6
+        run: python exec_scraper.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "exec-bot"
+          git config user.email "actions@github.com"
+          git add exec_trades.json seen_filings.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update executive-branch trades $(date -u +%Y-%m-%d)"
+            git push
+          fi
