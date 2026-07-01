@@ -42,7 +42,15 @@ UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 SEC_UA = {"User-Agent": "market-sentinel research prince.thissa@gmail.com"}
 
 # Filers to watch (case-insensitive substring match against the OGE 'name' field).
-WATCH = ["Trump, Donald J"]
+# Names are "Last, First" in OGE. "Wright, Christopher" is specific enough to avoid
+# the other Wrights in the dataset.
+WATCH = [
+    "Trump, Donald J",       # President
+    "Bessent, Scott",        # Treasury
+    "Lutnick, Howard",       # Commerce
+    "Burgum, Douglas",       # Interior
+    "Wright, Christopher",   # Energy
+]
 WINDOW_DAYS = 120          # how far back to keep trades in the output
 MAX_PAGES = 25             # cap pages sent to the vision model (bounds cost)
 DPI = 150                  # lower res -> fewer image tokens (still legible)
